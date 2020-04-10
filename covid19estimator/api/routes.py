@@ -1,5 +1,4 @@
-import json
-from flask import request, jsonify, Response, render_template, abort
+from flask import request, jsonify, Response, abort
 from flask.views import MethodView
 from covid19estimator.api import api_bp
 from covid19estimator.utilities.jsonxml import json_to_xml

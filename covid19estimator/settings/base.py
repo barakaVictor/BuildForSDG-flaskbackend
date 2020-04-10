@@ -40,7 +40,7 @@ dictConfig({
     }
 })
 LOG_ROUTES = [
-    "/api/v1/on-covid19",
-    "/api/v1/on-covid19/json",
-    "/api/v1/on-covid19/xml"
+    "/api/v1/on-covid-19",
+    "/api/v1/on-covid-19/json",
+    "/api/v1/on-covid-19/xml"
 ]
