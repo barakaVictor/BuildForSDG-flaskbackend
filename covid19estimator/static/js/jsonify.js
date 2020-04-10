@@ -25,11 +25,11 @@ $(document).ready(function () {
         population: 66622705,
         totalHospitalBeds: 1380614
     }
-    $('#json').val(JSON.stringify(dummydata, undefined, 4))
+    $('#json').html(JSON.stringify(dummydata, undefined, 4))
 
     $("#fetch-response").click(function(e){
         e.preventDefault()
-        var data = $("#json").val()
+        var data = $("#json").text()
         $.post(
             '/api/v1/on-covid-19',
             data
