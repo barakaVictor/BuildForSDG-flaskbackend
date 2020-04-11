@@ -46,6 +46,6 @@ LOG_ROUTES = [
 ]
 ALLOWED_ORIGINS = {
     r"/api/*": {
-        "origns": "*"
+        "origins": "*"
     }
 }
