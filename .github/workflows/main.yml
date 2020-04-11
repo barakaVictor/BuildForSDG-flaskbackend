@@ -23,8 +23,8 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: Install Python
-    - uses: actions/setup-python@v1
-    - with:
+      uses: actions/setup-python@v1
+      with:
         python-version: '3.x'  
 
     # Runs a single command using the runners shell
