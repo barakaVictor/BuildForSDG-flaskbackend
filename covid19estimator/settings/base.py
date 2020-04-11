@@ -44,3 +44,8 @@ LOG_ROUTES = [
     "/api/v1/on-covid-19/json",
     "/api/v1/on-covid-19/xml"
 ]
+ALLOWED_ORIGINS = {
+    r"/api/*": {
+        "origns": "*"
+    }
+}
