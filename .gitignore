@@ -9,6 +9,8 @@ setup.cfg
 # node modules
 node_modules/
 
+htmlcov/
+
 # tests
 audits/
 
@@ -16,6 +18,7 @@ audits/
 .venv/
 venv/
 
+.env
 # __pycache__
 src/__pycache__
 
