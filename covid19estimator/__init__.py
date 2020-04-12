@@ -1,4 +1,6 @@
-from flask import Flask
+import logging
+import time
+from flask import Flask, g, request
 from flask_cors import CORS
 
 def create_app(config='covid19estimator.settings'):

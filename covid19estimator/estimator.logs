@@ -14,3 +14,6 @@ OPTIONS /api/v1/on-covid-19 200 0 ms
 OPTIONS /api/v1/on-covid-19 200 0 ms
 OPTIONS /api/v1/on-covid-19 200 0 ms
 POST /api/v1/on-covid-19 200 0 ms
+POST /api/v1/on-covid-19/json 200 0 ms
+POST /api/v1/on-covid-19/json 200 0 ms
+POST /api/v1/on-covid-19/xml 200 0 ms
