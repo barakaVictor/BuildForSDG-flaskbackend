@@ -36,3 +36,6 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Run automated tests
       run: coverage run -m pytest
+      
+    - name: Generate coverage report
+      run: bash <(curl -s https://codecov.io/bash)
