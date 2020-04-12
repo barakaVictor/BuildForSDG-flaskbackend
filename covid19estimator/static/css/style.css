@@ -1,3 +1,17 @@
 body{
     background-color: #f4f7f8;
 }
+.gatsby-highlight {
+    color: rgb(255, 255, 255) !important;
+    tab-size: 1.5em;
+    background: rgb(40, 44, 52);
+    border-radius: 10px;
+    overflow: auto;
+}
+.gatsby-highlight *{
+    color: rgb(255, 255, 255) !important;
+}
+.request-data-holder > .card-body, .response-data-holder > .card-body{
+    height: 380px;
+    overflow-y: auto;
+}
