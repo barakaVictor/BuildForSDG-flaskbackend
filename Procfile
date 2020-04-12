@@ -1,1 +1,1 @@
-web: gunicorn startapp:app
+web: gunicorn "covid19estimator:create_app()"
