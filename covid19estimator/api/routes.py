@@ -7,18 +7,18 @@ from covid19estimator.utilities.logsgetter import get_logs
 
 class CovidImpactEstimator(MethodView):
 
-    accepted_formats = ['json', 'xml']
+    accepted_formats = ["json", "xml"]
 
     def get(self, resource):
         if resource and resource == 'logs':
-            return get_logs()
+            return Response(get_logs(), mimetype="text/plain")
         else:
             abort(404, description="Resource not found")
 
     def post(self, data_format):
         output = estimator(request.get_json(force=True))
         if data_format and data_format == "xml" :
-            return Response(json_to_xml(output), mimetype='application/xml')
+            return Response(json_to_xml(output), mimetype="application/xml")
         return jsonify(output)
 
 view = CovidImpactEstimator.as_view('estimator')
