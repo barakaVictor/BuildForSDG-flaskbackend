@@ -23,7 +23,7 @@ def create_app(config='covid19estimator.settings'):
     def log_request_info(response):
         if request.path in app.config.get("LOG_ROUTES"):
             diff = int((time.time() - g.start) * 1000)
-            log = f"{request.method} {request.path} {response.status_code} {diff} ms"
+            log = f"{request.method} {request.path} {response.status_code} {diff}ms"
             app.logger.info(log)
         return response
 
